@@ -7,7 +7,7 @@
  */
 
 // itialize our led to Pin 13
-int led = 13
+int led = 13;
 
 void setup() {
   // Using the Function pinMode to call the vairable led and provide OUTPUT
@@ -16,5 +16,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-}
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);
+  }
