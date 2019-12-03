@@ -1,19 +1,19 @@
 
 /* Programmer: Willliam Lin
- * Date: 11.6.19
- * Program: Blink
- * 
- * This program will turn on an LED for specified amounts of time, turn it off, and back on in a While Loop
- * 
- * Merged on 12.2.19
- * 
- * Programmer: Willliam Lin
- * Date: 11.6.19
- * Program: digitalRead & the Serial Port
- * 
- * Reads a digital input on pin2, prints
- */
- 
+   Date: 11.6.19
+   Program: Blink
+
+   This program will turn on an LED for specified amounts of time, turn it off, and back on in a While Loop
+
+   Merged on 12.2.19
+
+   Programmer: Willliam Lin
+   Date: 11.6.19
+   Program: digitalRead & the Serial Port
+
+   Reads a digital input on pin2, prints
+*/
+
 
 // itialize our led to Pin 13
 int led = 13;
@@ -36,23 +36,11 @@ void loop() {
   //print out the state of the button
   Serial.println(buttonState);
   // if the buttonState is True/Pushed by user, the LED will blink
-  if(buttonState == HIGH){
+  if (buttonState == HIGH) {
     digitalWrite(led, HIGH);
   }
   else {
     digitalWrite(led, LOW);
   }
-  delay(250); //delay in between readings for stability
+  delay(1); //delay in between readings for stability
 }
-
-
-
-
-
-
-
-
-
-
-
-  
