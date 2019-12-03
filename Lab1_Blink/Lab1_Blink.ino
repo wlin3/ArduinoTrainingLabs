@@ -35,6 +35,7 @@ void loop() {
   int buttonState = digitalRead(pushButton);
   //print out the state of the button
   Serial.println(buttonState);
+  // if the buttonState is True/Pushed by user, the LED will blink
   if(buttonState == HIGH){
     // put your main code here, to run repeatedly:
     digitalWrite(led, HIGH);
